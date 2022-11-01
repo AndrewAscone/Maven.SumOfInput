@@ -10,8 +10,10 @@ public class Main {
 
         int number = input.nextInt();
         int total = sumOfNumbers(number);
+        int totalGauss = gaussianSumOfNumbers(number);
 
         System.out.println("The total sum of numbers from 1 to " + number + " is: " + total);
+        System.out.println("The total sum of numbers from 1 to " + number + " using Gaussian magic is: " + total);
 
 
 
@@ -26,8 +28,8 @@ public class Main {
     }
     
     // for Extra Credit
-    int gaussianSumOfNumbers(int n) {
-        return 0;
+    static int gaussianSumOfNumbers(int n) {
+        return (n * (n + 1))/2;
     }
    
     // for Extra extra credit - compare the methods and show which one is faster
